@@ -1,0 +1,223 @@
+:root {
+    --cinza-escuro: #757575;
+    --cinza-claro: #e3e6e6;
+    --azul: #0e6dfd;
+    --verde: /*#075e54*/ #198855;
+    --amarelo:#fbc107;
+    --roxo: #9663c0 ; 
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 860px;
+    height: 600px;
+    min-height: 550px;
+
+    border-radius: 5px;
+    background-color: white;
+
+    box-shadow: 0 0 30px rgb(48, 47, 47);
+}
+.section-principal {
+    width: 100%;
+    height: 80%;
+    margin: 20px auto 0px auto;
+}
+.cabecalho {
+    width: 100%;
+    height: 25%;
+    max-height:80px;
+    color: white;
+    background-color: #586575;
+
+    box-sizing: border-box;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px 5px 0px 0px;
+
+}
+.principais-acoes {
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.acao {
+    
+    width: 30%;
+    height: 90%;
+    margin: 0 10px 0px 10px;
+    border-radius: 3px;
+    background-color: var(--cinza-escuro);
+
+    text-align: center;
+    position: relative;
+
+    box-shadow: 3px 3px 20px rgb(129, 127, 127);
+}
+
+.link_acao {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px -4px 20px -5px rgb(7, 4, 4);
+
+    
+}
+
+/* divisao dos produtos*/
+#produtos {
+    background-color: var(--azul);
+}
+#link_produtos {
+    background-color: #0f55bd;
+}
+
+/* divisao de fornecedores*/
+#fornecedores {
+    background-color: var(--roxo);
+}
+#link_fornecedores {
+    background-color:#734b92;
+}
+
+/* financeiro */
+.acao-3 {
+    background-color: var(--verde);
+}
+.link-acao-3 {
+    background-color:/*#094841*/ #206d49;
+}
+
+/* graficos */
+
+.graficos {
+    width: 95%;
+    height: 75%;
+    margin: auto;
+    display: flex;
+
+}
+.titulo_grafico {
+    margin-top: 6px;
+}
+.entrada_saida {
+    width: 50%;
+    min-width: 330px;
+    height: 90%;
+    border: 1px solid var(--cinza-claro);
+    box-sizing: border-box;
+    margin: 27px 6px 0px 6px;
+    box-shadow: 0px 0px 7px rgb(101, 100, 100);
+    display: block;
+    background-color: white;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    color: var(--cinza-escuro);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#curve_chart, #curve_chart2{
+    width: 100%; 
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* paragrafos e links*/
+p {
+    padding-top: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 650;
+    font-size: 14pt;
+}
+a {
+    font-weight: 600;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* para o site responsivo*/
+@media screen and (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        background: none;
+        box-shadow: none;
+
+    }
+    .section-principal{
+        
+        height: 100%;
+        background: none;
+        min-width: 333px;
+    }
+    .cabecalho {
+        border-radius: 0;
+        min-width: 333px;
+    }
+    .principais-acoes {
+       display: block;
+       height: auto;
+       min-width: 333px;
+
+    }
+    .acao {
+        width: 97%;
+        height: 120px;
+        box-sizing: border-box;
+        margin: 5px auto 0px auto;
+        min-width: 335px;
+    }
+    .graficos {
+        width: 98%;
+        height: 400px;
+        position: absolute;
+        margin-top: 20px;
+        display: block;
+
+    }
+    .entrada_saida {
+        background-color: white;
+        width: 100%;
+        box-shadow: none;
+        border: none;
+
+        margin: auto;
+    }
+    #curve_chart, #curve_chart2{
+        width: 100%;
+        border-radius: 0;
+    }
+
+}
